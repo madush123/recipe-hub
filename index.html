@@ -3,9 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recipe Sharing</title>
-</head>
+    <title>Simple Recipe Sharing | Your Home for Easy Cooking</title>
+    <link rel="stylesheet" href="styles.css"> </head>
 <body>
-    
+
+    <header>
+        <h1>Simple Recipe Sharing</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="appertizers.html">Appetizers</a>
+            <a href="desserts.html">Desserts</a>
+            <a href="submit.html">Share a Recipe</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <h2>Find Your Next Favorite Meal!</h2>
+            <p>Simple recipes shared by home cooks, for home cooks. No complicated steps, just delicious food.</p>
+            
+            <form action="search-results.html" method="get" class="search-bar">
+                <input type="text" name="query" placeholder="Search by name, ingredient, or cuisine...">
+                <button type="submit">Search</button>
+            </form>
+        </section>
+
+        <hr>
+
+        <section class="featured-section">
+            <h3>Recipe of the Week: **One-Pan Lemon Garlic Chicken**</h3>
+            <div class="featured-card">
+                <img src="images/featured-chicken.jpg" alt="Lemon Garlic Chicken Photo">
+                <div class="featured-content">
+                    <p>This week's top-rated recipe is perfect for busy weeknights. Prep it in 10 minutes and let the oven do the rest!</p>
+                    <div class="details">
+                        <span>⏱ Prep: 10m | 🍳 Cook: 40m | ⭐ 4.8 Rating</span>
+                    </div>
+                    <a href="recipes/lemon-chicken.html" class="button-link">View Recipe</a>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="new-recipes-section">
+            <h3>Just Added to the Cookbook</h3>
+            
+            <div class="recipe-grid">
+                <div class="recipe-card">
+                    <img src="images/new-recipe-1.jpg" alt="Spicy Black Bean Soup">
+                    <h3><a href="recipes/black-bean-soup.html">Spicy Black Bean Soup</a></h3>
+                    <p class="summary">A hearty, budget-friendly soup that's ready in under an hour.</p>
+                    <div class="details">
+                        <span>Category: Dinner</span>
+                    </div>
+                </div>
+
+                <div class="recipe-card">
+                    <img src="images/new-recipe-2.jpg" alt="5-Minute Microwave Fudge">
+                    <h3><a href="recipes/microwave-fudge.html">5-Minute Microwave Fudge</a></h3>
+                    <p class="summary">The easiest way to satisfy your chocolate craving, guaranteed!</p>
+                    <div class="details">
+                        <span>Category: Desserts</span>
+                    </div>
+                </div>
+                
+                <div class="recipe-card">
+                    <img src="images/new-recipe-3.jpg" alt="Avocado Toast with Everything Bagel Seasoning">
+                    <h3><a href="recipes/avocado-toast.html">The Ultimate Avocado Toast</a></h3>
+                    <p class="summary">Simple, quick, and the perfect start to any day.</p>
+                    <div class="details">
+                        <span>Category: Breakfast</span>
+                    </div>
+                </div>
+            </div>
+            
+            <a href="browse-all.html" class="button-link view-all">View All Recipes</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Simple Recipe Sharing | <a href="contact.html">Contact Us</a></p>
+    </footer>
+
 </body>
 </html>
