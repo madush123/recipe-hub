@@ -3,88 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Recipe Sharing | Your Home for Easy Cooking</title>
-    <link rel="stylesheet" href="styles.css"> </head>
+    <title>Appetizer Recipes</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1, h2 {
+            color: #333;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 5px;
+        }
+        .recipe {
+            margin-bottom: 30px;
+            padding: 15px;
+            border: 1px solid #eee;
+            border-radius: 5px;
+        }
+        .ingredients-list, .steps-list {
+            padding-left: 20px;
+        }
+        .ingredients-list li, .steps-list li {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
 <body>
 
-    <header>
-        <h1>Simple Recipe Sharing</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="appertizers.html">Appetizers</a>
-            <a href="desserts.html">Desserts</a>
-            <a href="submit.html">Share a Recipe</a>
-        </nav>
-    </header>
+    <h1>Delicious Appetizer Recipes</h1>
 
-    <main>
-        <section class="hero-section">
-            <h2>Find Your Next Favorite Meal!</h2>
-            <p>Simple recipes shared by home cooks, for home cooks. No complicated steps, just delicious food.</p>
-            
-            <form action="search-results.html" method="get" class="search-bar">
-                <input type="text" name="query" placeholder="Search by name, ingredient, or cuisine...">
-                <button type="submit">Search</button>
-            </form>
-        </section>
+    <div class="recipe">
+        <h2>1. Classic Guacamole</h2>
+        
+        <h3>Ingredients</h3>
+        <ul class="ingredients-list">
+            <li>3 ripe **Avocados**, mashed</li>
+            <li>1 small **Onion**, finely chopped</li>
+            <li>1-2 **Jalapeño** peppers, seeds removed and minced (optional)</li>
+            <li>2 tablespoons **Cilantro**, chopped</li>
+            <li>1 tablespoon **Lime Juice** (fresh is best)</li>
+            <li>1/2 teaspoon **Salt** (or to taste)</li>
+            <li>Pinch of **Black Pepper**</li>
+            <li>1 **Tomato**, seeds removed and diced (optional)</li>
+        </ul>
 
-        <hr>
+        <h3>Steps</h3>
+        <ol class="steps-list">
+            <li>Cut the avocados in half, remove the pits, and scoop the flesh into a medium bowl.</li>
+            <li>**Mash** the avocado with a fork to your desired consistency (chunky or smooth).</li>
+            <li>Stir in the chopped **onion**, **jalapeño** (if using), **cilantro**, and **lime juice**.</li>
+            <li>Season with **salt** and **pepper**. Mix well.</li>
+            <li>Gently fold in the diced **tomato** (if using).</li>
+            <li>Taste and adjust seasoning if needed. Serve immediately with tortilla chips.</li>
+        </ol>
+    </div>
 
-        <section class="featured-section">
-            <h3>Recipe of the Week: **One-Pan Lemon Garlic Chicken**</h3>
-            <div class="featured-card">
-                <img src="images/featured-chicken.jpg" alt="Lemon Garlic Chicken Photo">
-                <div class="featured-content">
-                    <p>This week's top-rated recipe is perfect for busy weeknights. Prep it in 10 minutes and let the oven do the rest!</p>
-                    <div class="details">
-                        <span>⏱ Prep: 10m | 🍳 Cook: 40m | ⭐ 4.8 Rating</span>
-                    </div>
-                    <a href="recipes/lemon-chicken.html" class="button-link">View Recipe</a>
-                </div>
-            </div>
-        </section>
+    <hr>
 
-        <hr>
+    <div class="recipe">
+        <h2>2. Simple Bruschetta</h2>
+        
+        <h3>Ingredients</h3>
+        <ul class="ingredients-list">
+            <li>1 French **Baguette**, sliced into 1/2-inch thick pieces</li>
+            <li>2 tablespoons **Olive Oil** (for brushing bread)</li>
+            <li>3 medium **Tomatoes** (Roma or cherry), diced</li>
+            <li>2 cloves **Garlic**, minced</li>
+            <li>2 tablespoons fresh **Basil**, chopped</li>
+            <li>1 tablespoon **Balsamic Vinegar**</li>
+            <li>1 tablespoon **Olive Oil** (for topping mixture)</li>
+            <li>**Salt** and **Black Pepper** to taste</li>
+        </ul>
 
-        <section class="new-recipes-section">
-            <h3>Just Added to the Cookbook</h3>
-            
-            <div class="recipe-grid">
-                <div class="recipe-card">
-                    <img src="images/new-recipe-1.jpg" alt="Spicy Black Bean Soup">
-                    <h3><a href="recipes/black-bean-soup.html">Spicy Black Bean Soup</a></h3>
-                    <p class="summary">A hearty, budget-friendly soup that's ready in under an hour.</p>
-                    <div class="details">
-                        <span>Category: Dinner</span>
-                    </div>
-                </div>
-
-                <div class="recipe-card">
-                    <img src="images/new-recipe-2.jpg" alt="5-Minute Microwave Fudge">
-                    <h3><a href="recipes/microwave-fudge.html">5-Minute Microwave Fudge</a></h3>
-                    <p class="summary">The easiest way to satisfy your chocolate craving, guaranteed!</p>
-                    <div class="details">
-                        <span>Category: Desserts</span>
-                    </div>
-                </div>
-                
-                <div class="recipe-card">
-                    <img src="images/new-recipe-3.jpg" alt="Avocado Toast with Everything Bagel Seasoning">
-                    <h3><a href="recipes/avocado-toast.html">The Ultimate Avocado Toast</a></h3>
-                    <p class="summary">Simple, quick, and the perfect start to any day.</p>
-                    <div class="details">
-                        <span>Category: Breakfast</span>
-                    </div>
-                </div>
-            </div>
-            
-            <a href="browse-all.html" class="button-link view-all">View All Recipes</a>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Simple Recipe Sharing | <a href="contact.html">Contact Us</a></p>
-    </footer>
+        <h3>Steps</h3>
+        <ol class="steps-list">
+            <li>Preheat oven to 350°F (175°C). Brush both sides of the baguette slices with **olive oil** and arrange on a baking sheet.</li>
+            <li>**Toast** in the oven for about 8-10 minutes, or until lightly golden and crisp. Remove and let cool.</li>
+            <li>While the bread is toasting, prepare the topping: In a medium bowl, combine the diced **tomatoes**, minced **garlic**, chopped **basil**, **balsamic vinegar**, and 1 tablespoon of **olive oil**.</li>
+            <li>Season the tomato mixture generously with **salt** and **pepper**. Stir well.</li>
+            <li>Spoon a generous amount of the tomato mixture onto each toasted baguette slice.</li>
+            <li>Serve immediately. A drizzle of extra balsamic glaze on top is optional.</li>
+        </ol>
+    </div>
 
 </body>
 </html>
